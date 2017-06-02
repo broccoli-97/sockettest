@@ -17,7 +17,7 @@ public class NIOServer {
     public static void main(String args[]) throws IOException {
         //创建serversocketchannel，监听8080端口
         ServerSocketChannel serverSocketChannel=ServerSocketChannel.open();
-        serverSocketChannel.socket().bind(new InetSocketAddress(8081));
+        serverSocketChannel.socket().bind(new InetSocketAddress(8080));
 
         //设置为非阻塞模式
         serverSocketChannel.configureBlocking(false);

@@ -12,9 +12,9 @@ import java.net.Socket;
  */
 public class Server {
     public static void main(String args[]){
-        //首先创建一个serversocket监听9000端口
+        //首先创建一个serversocket监听8080端口
         try {
-            ServerSocket serverSocket=new ServerSocket(9007);
+            ServerSocket serverSocket=new ServerSocket(8080);
             //等待请求
             Socket socket=serverSocket.accept();
             //收到请求后使用socket进行通信，创建BufferedReader用于读取数据

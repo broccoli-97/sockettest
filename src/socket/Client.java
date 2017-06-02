@@ -13,10 +13,10 @@ public class Client {
     public static void main(String args[]){
         String msg="You are so beatiful";
 
-        //创建一个socket，跟本机的9007端口建立连接
+        //创建一个socket，跟本机的8080端口建立连接
         try {
 
-            Socket socket=new Socket("127.0.0.1",8081);
+            Socket socket=new Socket("127.0.0.1",8080);
             //使用socket创建printWriter和BufferedReader进行读写数据
             PrintWriter printWriter=new PrintWriter(socket.getOutputStream());
             BufferedReader bufferedReader=new BufferedReader(new InputStreamReader(socket.getInputStream()));
